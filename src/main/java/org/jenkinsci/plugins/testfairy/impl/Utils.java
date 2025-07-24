@@ -1,8 +1,6 @@
 package org.jenkinsci.plugins.testfairy.impl;
 
 import com.testfairy.uploader.TestFairyException;
-import com.testfairy.uploader.Uploader;
-import com.testfairy.uploader.Validation;
 import hudson.EnvVars;
 import hudson.scm.ChangeLogSet;
 
