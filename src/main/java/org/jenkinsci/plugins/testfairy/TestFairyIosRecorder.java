@@ -21,9 +21,9 @@ import org.jenkinsci.plugins.testfairy.impl.TestFairyBaseRecorder;
 import org.jenkinsci.plugins.testfairy.impl.Utils;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.io.IOException;
 
 import static hudson.Util.getHostName;
@@ -231,7 +231,7 @@ public class TestFairyIosRecorder extends TestFairyBaseRecorder {
 		}
 
 		@Override
-		public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
+		public boolean configure(StaplerRequest2 req, JSONObject formData) throws FormException {
 			save();
 			return super.configure(req, formData);
 		}
